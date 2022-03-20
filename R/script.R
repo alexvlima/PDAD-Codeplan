@@ -2,7 +2,7 @@
 ### LIBRARIES ###
 #################
 
-library(dplyr)
+library(tidyverse)
 library(arules)
 
 ################
@@ -28,8 +28,8 @@ for(i in seq_along(url)){
 ### DATASET ###
 ###############
 
-arquivos <- list.files()
-moradores <- read.csv2('base_moradores.csv', 
+list.files()
+moradores <- read.csv2('Dados/base_moradores.csv', 
                        stringsAsFactors = FALSE, 
                        fileEncoding = 'latin1')
 glimpse(moradores)
